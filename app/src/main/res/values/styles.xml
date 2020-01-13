@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextDefault</item>
+    </style>
+
+    <style name="App.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+
+    <style name="Theme.Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+    </style>
+
+    <style name="Style.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:elevation">6dp</item>
+        <item name="titleTextColor">@android:color/black</item>
+        <item name="titleTextAppearance">@style/Style.Toolbar.Title</item>
+        <item name="colorControlHighlight">@color/colorTabSelected</item>
+    </style>
+
+    <style name="Style.Toolbar.Title" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/blogger_sans_medium_font</item>
+        <item name="android:fontFamily">@font/blogger_sans_medium_font</item>
+    </style>
+
+    <style name="Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Style.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/colorTabIndicator</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">3dp</item>
+        <item name="tabPaddingEnd">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/colorTextDefault</item>
+        <item name="tabTextAppearance">@style/Style.TabLayout.Title</item>
+    </style>
+
+    <style name="Style.TabLayout.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/blogger_sans_light_font</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Style.Bottom.Nav.Bar" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@android:color/white</item>
+        <item name="itemIconTint">@drawable/selector_tab_icon_state</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+        <item name="elevation">6dp</item>colo
+    </style>
+
+    <style name="Style.Button.Normal" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_rounded_corner</item>
+    </style>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.app.lawyerly.ui.viewmodel.LawyerListViewModel" />
+
+        <variable
+            name="item"
+            type="com.app.lawyerly.data.LawyerEntity" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="@{() -> viewModel.onItemClick()}">
+
+            <TextView
+                android:id="@+id/lawyer_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blogger_sans_medium_font"
+                android:text="@{item.stars}"
+
+                android:textColor="@color/colorLawyerStar"
+                app:layout_constraintBottom_toBottomOf="@+id/icon_stars"
+                app:layout_constraintEnd_toStartOf="@+id/icon_stars"
+                app:layout_constraintTop_toTopOf="@+id/icon_stars" />
+
+            <ImageView
+                android:id="@+id/icon_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/icon_verified"
+                app:layout_constraintEnd_toStartOf="@+id/icon_verified"
+                app:srcCompat="@drawable/ic_rating" />
+
+            <ImageView
+                android:id="@+id/icon_small_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/icon_verified"
+                app:layout_constraintStart_toStartOf="@+id/icon_verified"
+                app:layout_constraintTop_toBottomOf="@id/icon_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_small_arrow" />
+
+            <ImageView
+                android:id="@+id/icon_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/lawyer_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lawyer" />
+
+            <TextView
+                android:id="@+id/lawyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/blogger_sans_medium"
+                android:text="@{item.name}"
+                android:textColor="@color/colorLawyerName"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/lawyer_speciality"
+                app:layout_constraintStart_toEndOf="@id/icon_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/lawyer_speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/blogger_sans_light"
+                android:text="@{item.speciality}"
+                android:textColor="@color/colorLawyerSpeciality"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_logo"
+                app:layout_constraintTop_toBottomOf="@+id/lawyer_name"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Speciality" />
+
+            <ImageView
+                android:id="@+id/icon_verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_verified" />
+
+            <TextView
+                android:id="@+id/hourly_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blogger_sans_light_font"
+                android:text="@{item.rate}"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/lawyer_speciality"
+                app:layout_constraintEnd_toEndOf="@+id/icon_stars"
+                app:layout_constraintTop_toBottomOf="@+id/lawyer_name"
+                tools:text="£60.61/h" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
+

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lawyerly</string>
+
+    <string name="msg_friendly_note">Kept for demo purpose, may change in the future</string>
+    <string name="title_tab_one">Featured (5)</string>
+    <string name="title_tab_two">All (18)</string>
+    <string name="title_tab_three">Favs (1)</string>
+    <string name="btm_tab_one">One</string>
+    <string name="btm_tab_two">Two</string>
+    <string name="btm_tab_three">Three</string>
+    <string name="btm_tab_four">Four</string>
+    <string name="btm_tab_five">Five</string>
+    <string name="label_sort_by">Sort By</string>
+    <string name="label_filters">Filters</string>
+    <string name="lawyer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</string>
+    <string name="lawyer_another_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="activity_lawyer_details">Lawyer Details</string>
+    <string name="label_verified">Verified Background</string>
+    <string name="label_name">Name</string>
+    <string name="label_surname">Surname</string>
+    <string name="label_speciality">Speciality</string>
+    <string name="sample_hourly_rate">£60.90/h</string>
+    <string name="label_free_consulting">1st FREE Consultation Available</string>
+    <string name="sample_stars">4.8</string>
+    <string name="label_rating">Rating</string>
+    <string name="sample_review">12</string>
+    <string name="label_reviews">Reviews</string>
+    <string name="sample_ranking">1/14</string>
+    <string name="label_ranking">Ranking</string>
+    <string name="label_membership">Member since: Oct 2015</string>
+    <string name="label_response_time">Avg Response Time: 1 day</string>
+    <string name="label_description">Description</string>
+    <string name="label_more_info">Another Info</string>
+    <string name="label_schedule">Schedule Lawyer</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorControlHighlight">#A9A9A9</color>
+    <color name="colorTabIndicator">@android:color/holo_orange_dark</color>
+    <color name="colorTextDefault">@android:color/black</color>
+    <color name="colorTabSelected">#27EB8E</color>
+    <color name="colorTabUnSelected">#3B3F44</color>
+    <color name="colorButton">#77F479</color>
+
+    <!-- Colors for Lawyer list item -->
+    <color name="colorLawyerName">#4A4D51</color>
+    <color name="colorLawyerSpeciality">#9B9D9F</color>
+    <color name="colorLawyerStar">#4C4F53</color>
+
+</resources>

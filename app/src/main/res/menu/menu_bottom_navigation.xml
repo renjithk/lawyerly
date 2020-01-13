@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/btm_tab_one"
+        android:id="@+id/action_btm_tab_one"
+        android:icon="@drawable/ic_tab_one"/>
+
+    <item android:title="@string/btm_tab_two"
+        android:id="@+id/action_btm_tab_two"
+        android:icon="@drawable/ic_tab_two"/>
+
+    <item android:title="@string/btm_tab_three"
+        android:id="@+id/action_btm_tab_three"
+        android:icon="@drawable/ic_tab_three"/>
+
+    <item android:title="@string/btm_tab_four"
+        android:id="@+id/action_btm_tab_four"
+        android:icon="@drawable/ic_tab_four"/>
+
+    <item android:title="@string/btm_tab_five"
+        android:id="@+id/action_btm_tab_five"
+        android:icon="@drawable/ic_tab_five"/>
+
+</menu>
